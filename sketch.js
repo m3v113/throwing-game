@@ -65,6 +65,8 @@ function setup() {
 
   polygon = Bodies.circle(50,200,20);
   World.add(world, polygon);
+  polygon.length = 1;
+  polygon.stiffness = 0.4;
 
   slingshot = new Slingshot(this.polygon, {x:100,y:200});
 
