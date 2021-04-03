@@ -78,8 +78,6 @@ function draw() {
   fill("lightyellow")
 
   imageMode(CENTER);
-  polygon.length = 2;
-  polygon.stiffness = 0.7;
   image(polygon_img, polygon.position.x, polygon.position.y, 40,40);
 
   //polygon(polygon_img);
