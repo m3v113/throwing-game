@@ -65,8 +65,6 @@ function setup() {
 
   polygon = Bodies.circle(50,200,20);
   World.add(world, polygon);
-  polygon.length = 1;
-  polygon.stiffness = 0.4;
 
   slingshot = new Slingshot(this.polygon, {x:100,y:200});
 
@@ -80,6 +78,8 @@ function draw() {
   fill("lightyellow")
 
   imageMode(CENTER);
+  polygon.length = 1;
+  polygon.stiffness = 0.4;
   image(polygon_img, polygon.position.x, polygon.position.y, 40,40);
 
   //polygon(polygon_img);
